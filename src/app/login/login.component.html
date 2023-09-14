@@ -1,0 +1,29 @@
+<div class="my-20">
+  <form
+    #login="ngForm"
+    (ngSubmit)="handleLogin(login.value)"
+    class="w-full flex flex-col items-center"
+  >
+    <h2 class="text-5xl font-bold">Login !</h2>
+    <input
+      ngModel
+      name="email"
+      type="email"
+      placeholder="Enter your Email..."
+      class="outline-none text-xl my-10 px-4 py-2 border border-blue-400 w-4/12 h-14 rounded-lg"
+    />
+    <input
+      ngModel
+      name="password"
+      type="password"
+      placeholder="Enter your Password..."
+      class="outline-none text-xl px-4 py-2 border border-blue-400 w-4/12 h-14 rounded-lg"
+    />
+    <button
+      type="submit"
+      class="w-4/12 h-16 rounded-lg text-2xl bg-green-400 hover:cursor-pointer hover:bg-blue-400 mt-10"
+    >
+      Log In
+    </button>
+  </form>
+</div>
